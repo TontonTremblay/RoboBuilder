@@ -1,0 +1,52 @@
+/* Simple academic page, using the MG-VQA green palette. */
+*{box-sizing:border-box}
+:root{color-scheme:light;--text:#242d21;--muted:#626e5c;--line:#d9e4cc;--link:#446b09;--green:#76b900}
+html{scroll-behavior:smooth}
+body{margin:0;border-top:4px solid var(--green);background:#f3f8ec;color:var(--text);font:16px/1.75 Arial,sans-serif}
+main{width:min(1100px,calc(100% - 48px));margin:auto}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--green);outline-offset:4px}
+[hidden]{display:none!important}
+h1,h2,h3,p,figure{margin-top:0}
+h1{font-size:clamp(29px,3.3vw,43px);line-height:1.23;font-weight:600;letter-spacing:-1.3px;margin-bottom:26px}
+h2{text-align:center;font-size:27px;line-height:1.3;font-weight:600;letter-spacing:-.55px;margin-bottom:24px}
+h3{font-weight:600;font-size:19px;line-height:1.4;margin:25px 0 14px}
+p{margin-bottom:18px}section{margin-bottom:62px}
+.hero{text-align:center;padding:66px 0 46px}
+.authors{display:flex;flex-wrap:wrap;justify-content:center;gap:2px 17px;font-size:16px;max-width:1000px;margin:0 auto;line-height:1.9}
+.authors span,.authors a{white-space:nowrap}sup{font-size:10px;line-height:0;vertical-align:super;margin-left:2px}
+.affiliations{display:flex;justify-content:center;gap:25px;font-size:15px;margin:14px 0 21px}
+.resources{display:flex;gap:12px;justify-content:center}
+.resource{display:inline-flex;align-items:center;justify-content:center;padding:11px 21px;border:1px solid #bfd3a5;border-radius:999px;color:#344f22;background:#fbfdf8;font-size:14px;font-weight:600}
+.prose{max-width:900px;margin:auto}.prose p{text-align:justify;line-height:1.8}
+.figure{margin:26px 0}.figure img{display:block;width:100%;height:auto}.figure a{display:block}
+figcaption,.result-caption{color:var(--muted);font-size:13px;line-height:1.6;margin-top:12px}
+.precision{max-width:720px;margin:32px auto}.result-block{margin-bottom:42px}
+.table-scroll{overflow-x:auto;margin:20px 0}
+table{width:100%;min-width:1040px;border-collapse:collapse;font-size:13px;line-height:1.5;font-variant-numeric:tabular-nums}
+th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:center;vertical-align:top}
+thead th{background:#e7f0da;border-top:1px solid #c7cdd1;border-bottom:1px solid #c7cdd1;font-weight:600;vertical-align:bottom}
+th[scope=row]{text-align:left;font-weight:500;white-space:nowrap}td{white-space:nowrap}
+.best{background:#d1e8b6;font-weight:700}.second{background:#e5f1d5}
+.table-divider th{text-align:left;background:#edf3e6;font-size:12px}.overall{border-top:1px solid #aeb7bd;font-weight:600}
+.demo-selectors{margin:0 0 24px;padding-bottom:16px;border-bottom:1px solid #b7cf99}
+.demo-group{display:flex;align-items:baseline;gap:12px;margin-bottom:10px}.demo-group:last-child{margin:0}
+.group-title{flex:0 0 105px;font-size:12px;font-weight:600;color:var(--muted)}
+.demo-buttons{display:flex;flex-wrap:wrap;gap:7px}
+button{font:inherit;cursor:pointer}.demo-button{border:1px solid #c8dbac;border-radius:4px;background:#fbfdf8;color:#446b09;padding:8px 12px;font-size:13px;line-height:1.5;text-align:left}
+.demo-button small{display:block;font-size:10px;color:var(--muted)}
+.demo-button:hover{background:#edf5e3}.demo-button[aria-pressed=true]{background:#ddebbe;border-color:var(--green);color:#365b0d}
+.player-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 14px}
+.player-heading h3{margin:0;font-size:18px}.player-heading p{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.player-actions{display:flex;align-items:center;gap:16px;font-size:12px;white-space:nowrap}
+.player-actions button{border:1px solid #c8dbac;background:#fbfdf8;color:#446b09;padding:5px 12px;border-radius:4px}
+.stage{background:#0c121d;position:relative;aspect-ratio:16/9}.stage video{display:block;width:100%;height:100%;object-fit:contain}
+.play-notice{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid white;padding:14px 20px;border-radius:6px;background:#365b0ded;color:white;font-size:15px}
+.demo-footer{margin-top:10px;font-size:12px}
+#bibtex{margin:60px 0 35px}#bibtex h2{text-align:left;font-size:23px;margin-bottom:14px}
+pre{background:#edf3e5;border:1px solid #d1e0bf;border-radius:3px;padding:20px;font:15px/1.6 ui-monospace,monospace;white-space:pre-wrap}
+.skip{position:absolute;top:-80px;left:15px;background:white;padding:10px;z-index:2}.skip:focus{top:10px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:800px){main{width:calc(100% - 38px)}.hero{padding:45px 0 38px}.wide-break{display:none}.authors{font-size:14px;gap:2px 14px}}
+@media(max-width:600px){body{font-size:14px}main{width:calc(100% - 30px)}h1{font-size:29px;letter-spacing:-.8px}h2{font-size:24px}.hero{padding:36px 0}.authors{font-size:13px;gap:2px 12px}.affiliations{font-size:13px}.resource{font-size:12px;padding:9px 14px}section{margin-bottom:43px}.prose p{text-align:left}.demo-group{display:block}.group-title{display:block;margin:8px 0 5px}.player-heading{flex-wrap:wrap}.player-heading h3{font-size:16px}figcaption,.result-caption{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
