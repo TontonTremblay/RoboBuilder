@@ -25,3 +25,6 @@ In the closing sequence, the existing RoboBuilder heading descends into the
 credits, showing all 12 authors in the website’s order for a brief 1.5-second
 hold. The title and every author row then fold together into the terminal
 transition to complete the loop.
+
+The terminal prompt uses the NVIDIA eye symbol. A single left-to-right sheen
+passes across the completed prompt immediately before submission.
