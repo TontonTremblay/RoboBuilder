@@ -22,5 +22,6 @@ into the opening terminal panel. Its final frame matches the opening for
 continuous playback.
 
 In the closing sequence, the existing RoboBuilder heading descends into the
-credits, showing all 12 authors in the website’s order before the terminal
-transition completes the loop.
+credits, showing all 12 authors in the website’s order for a brief 1.5-second
+hold. The title and every author row then fold together into the terminal
+transition to complete the loop.
