@@ -20,3 +20,7 @@ rollout gallery pause each other when playback starts.
 The overview loops through an NVIDIA-green RoboBuilder wordmark that unfolds
 into the opening terminal panel. Its final frame matches the opening for
 continuous playback.
+
+In the closing sequence, the existing RoboBuilder heading descends into the
+credits, showing all 12 authors in the website’s order before the terminal
+transition completes the loop.
