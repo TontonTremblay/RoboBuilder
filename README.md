@@ -16,3 +16,7 @@ with a WebP poster, native playback controls, and a download link. This is an
 illustrative Blender animation; its displayed errors describe the constructed
 animation and are not recorded benchmark policy results. The overview and
 rollout gallery pause each other when playback starts.
+
+The overview loops through an NVIDIA-green RoboBuilder wordmark that unfolds
+into the opening terminal panel. Its final frame matches the opening for
+continuous playback.
